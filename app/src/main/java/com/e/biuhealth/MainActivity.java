@@ -16,14 +16,11 @@ import java.util.Timer;
 
 public class MainActivity extends AppCompatActivity {
     Button myNext;
-    private Timer timer;
     private int current_position;
     TabLayout tabindicator;
     ViewPager viewPager;
     int images [] = {R.drawable.mobile_ux_bro, R.drawable.getdrug, R.drawable.feed_amico};
     int accets [] = {R.drawable.group4850, R.drawable.group4858, R.drawable.group4857};
-    //String firstString [] = {"Get medical", "Get drugs Delivered", "Get Access to"};
-   // String secondString [] = {"services from home", "at your Doorsteps.", "daily health tips"};
     String firstString [] = {"Get medical", "Get drugs Delivered", "Get Access to"};
     String secondString [] = {"services from home", "at your Doorsteps.", "daily health tips"};
     String description [] = {"Virtual hospital where you consult with professionals on the go.",
@@ -51,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(current_position);
                 }
                 if (current_position == 3){
-                    Intent myIntent = new Intent(MainActivity.this, GoActivity.class);
+                    Intent myIntent = new Intent(MainActivity.this, LoginActivity.class);
                     startActivity(myIntent);
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
                 }
@@ -79,17 +76,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-   /* private  void  createSlideshow(){
-
-        final Handler handler = new Handler();
-        final Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                if (current_position == )
-            }
-        };
-    }
-
-    */
 }

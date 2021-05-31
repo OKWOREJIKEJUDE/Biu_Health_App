@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/myBlueColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/loginTextview"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/relay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/loginTextview">
+
+        <ImageView
+            android:id="@+id/mypersonImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_person_black_24dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/mySearchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:layout_toEndOf="@id/mypersonImageView"
+            android:hint="Email or Username"
+            android:textSize="12dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Secondrelay"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay">
+
+        <ImageView
+            android:id="@+id/mylockImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_lock_black_24dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/mylockEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:layout_toEndOf="@id/mylockImageView"
+            android:hint="Password"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/remember"
+        android:textStyle="normal"
+        android:textSize="12dp"
+        android:text="Remember Me"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="17dp"
+        android:layout_toStartOf="@id/switch1"
+        android:layout_below="@id/Secondrelay"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.5dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_below="@id/Secondrelay"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="login"
+        android:textSize="12dp"
+        android:background="@color/myBlueColor2"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/Secondrelay"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:elevation="50dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginEnd="60dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/texttt"
+        android:textStyle="normal"
+        android:layout_marginStart="35dp"
+        android:textSize="12dp"
+        android:text="Dont have an account? Sign Up "
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/login"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tex"
+        android:layout_marginEnd="50dp"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_marginBottom="5dp"
+        android:text="...your health, your wealth"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:cardCornerRadius="250dp"
+        android:layout_below="@id/texttt"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/lightBlue">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="250dp"
+            android:background="@color/white"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/twitter2"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

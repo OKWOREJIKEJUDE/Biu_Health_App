@@ -18,6 +18,7 @@ public class WelcomePage extends AppCompatActivity {
             @Override
             public void run() {
                 try {
+
                     sleep(4000);
                 }catch (InterruptedException e){
                     e.printStackTrace();
