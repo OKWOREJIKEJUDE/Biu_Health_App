@@ -11,25 +11,25 @@ import android.widget.EditText;
 public class LoginActivity extends AppCompatActivity {
     String myString;
     EditText myLock;
-    Button myLogin;
+    Button myLogin1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        myLogin = (Button) findViewById(R.id.login);
+        myLogin1 = (Button) findViewById(R.id.login);
         myString = getIntent().getStringExtra("position");
 
         myLock = (EditText) findViewById(R.id.mylockEditText);
         myLock.getText().toString();
         myLock.setFocusableInTouchMode(true);
 
-        myLogin.setOnClickListener(new View.OnClickListener() {
+        myLogin1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myInt = new Intent(LoginActivity.this, CreateAccount2.class);
-                startActivity(myInt);
+                Intent myIntent = new Intent(LoginActivity.this, Create_account1.class);
+                startActivity(myIntent);
             }
         });
 

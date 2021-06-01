@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myBlueColor"
+    tools:context=".Create_account1">
+
+
+    <TextView
+        android:id="@+id/createanaccount"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="Create an account"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/relay1"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="35sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/createanaccount">
+
+        <EditText
+            android:id="@+id/myeditT1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="First Name"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay1">
+
+        <EditText
+            android:id="@+id/myeditT2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="Surname"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay2">
+
+        <EditText
+            android:id="@+id/myeditT3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="Email"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="text"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay4"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay3">
+
+        <EditText
+            android:id="@+id/myeditT4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="Date Of Birth"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay5"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay4">
+
+        <EditText
+            android:id="@+id/myeditT5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="Phone"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay6"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay5">
+
+        <EditText
+            android:id="@+id/myeditT6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="Password"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay7"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="18sp"
+        android:layout_centerInParent="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/relay6">
+
+        <EditText
+            android:id="@+id/myeditT7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/focus1"
+            android:scrollIndicators="none"
+            android:hint="Confirm Password"
+            android:textSize="12dp"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relay7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:text="By creating an account you agree to our terms of service and privacy policy "
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/myContinue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="continue"
+        android:textSize="12dp"
+        android:background="@color/myBlueColor2"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="6"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/relay8"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:elevation="50dp" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="...your health, your wealth"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
